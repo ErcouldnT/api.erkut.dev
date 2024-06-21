@@ -1,11 +1,10 @@
 import { json } from '@sveltejs/kit';
 
 export function GET() {
-  const number = Math.floor(Math.random() * 6) + 1;
+	const number = Math.floor(Math.random() * 6) + 1;
 
-  return json({
-    status: "hello",
-    message: number
-  });
+	return json({
+		status: 'hello',
+		message: number
+	});
 }
-
