@@ -2,5 +2,5 @@ import { json } from '@sveltejs/kit';
 import gecko from '$lib/coin/gecko';
 
 export async function GET() {
-	return json(await gecko.simplePrice({ vs_currencies: 'try', ids: 'ethereum' }));
+	return json(await gecko.simplePrice({ vs_currencies: 'try,rub', ids: 'usd' }));
 }
